@@ -14,12 +14,11 @@ concurrency:
   group: "pages"
   cancel-in-progress: true
 
-
 jobs:
   deploy:
     evironment:
     name: github-pages
-    url: ${{ steps.github_pages.outputs.url}}
+    url: ${{ steps.github_pages.outputs.url }}
   runs-on: ubuntu-latest
   steps:
     - name: Clonar Repositorio
